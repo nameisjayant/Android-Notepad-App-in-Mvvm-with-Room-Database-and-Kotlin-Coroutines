@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".ui.ui.AnotherActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar1"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/currentDate"
+            android:text="7 August 10:01 PM "
+            android:layout_width="wrap_content"
+            app:fontFamily="@font/josefin_sans_bold_italic"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/characters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/currentDate"
+            android:text="| 0 characters"
+            app:fontFamily="@font/josefin_sans_bold_italic" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/note"
+            android:gravity="top"
+            android:padding="10dp"
+            app:fontFamily="@font/josefin_sans_bold_italic"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:focusable="true"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</LinearLayout>
